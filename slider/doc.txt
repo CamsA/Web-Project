@@ -1,0 +1,28 @@
+Placer le dossier LATESLIDER a la racine de votre dossier theme.
+
+Vous pouvez ajouter de nouvelle options ou paramettre au slider en allant dans le fichier "slider.js".
+La liste des options se trouve sur : https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
+
+------------------------------------------------------
+
+A placer dans le header de votre site :
+
+<!-- Carousel -->
+<script src="<?php echo get_template_directory_uri()?>/LATESLIDER/slider.js"></script>
+<link rel='stylesheet' href='<?php echo get_template_directory_uri()?>/LATESLIDER/slider.css'>
+<link rel="stylesheet" href="<?= get_bloginfo('template_url'); ?>/LATESLIDER/lib/owlCarousel/dist/assets/owl.carousel.min.css">
+<script src="<?= get_bloginfo('template_url'); ?>/LATESLIDER/lib/owlCarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="<?= get_bloginfo('template_url'); ?>/LATESLIDER/lib/owlCarousel/dist/owl.carousel.min.js"></script>
+<!-- /Carousel -->
+
+------------------------------------------------------
+
+A placer à l'endroit ou vous souhaité afficher le slider :
+
+<?php {include("LATESLIDER/slider.php");} ;?>
+
+------------------------------------------------------
+
+Dans le fichier "slider.php" ce trouve deux code, un pour un champs répéteur et l'autre pour afficher dans le slide
+des articles, mettez en commentaire le code que vous ne souhaitez pas utiliser.
+
